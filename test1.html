@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <input type="number" id="numberIn">
+    <button type="button" id="button" onclick="myFunction()">CHECK</button>
+    <p id="answer"></p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("numberIn").value;
+            if (x>=1 && x<=10) {
+                document.getElementById("answer").innerHTML = "OK";
+            } else {
+                document.getElementById("answer").innerHTML = "NOT OK";
+            }
+
+        }
+    </script>
+    
+</body>
+</html>
